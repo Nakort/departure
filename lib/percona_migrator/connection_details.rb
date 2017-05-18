@@ -34,7 +34,7 @@ module PerconaMigrator
     # @return [String]
     def password_argument
       if password.present?
-        %Q[--password "#{password}" ]
+        %Q[--password '#{password}' ]
       else
         ''
       end
